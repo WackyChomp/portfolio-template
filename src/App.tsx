@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import './index.css';
-import Navbar from '@/scenes/navbar';
 import { SelectedPage } from './shared/types';
+
+import Navbar from '@/scenes/navbar';
+import Home from '@/scenes/home';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);     // ensures enum string type
@@ -14,6 +16,7 @@ function App() {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
+      <Home setSelectedPage={setSelectedPage} />
     </div>
   )
 }
