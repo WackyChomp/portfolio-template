@@ -4,6 +4,7 @@ import { SelectedPage } from './shared/types';
 
 import Navbar from '@/scenes/navbar';
 import Home from '@/scenes/home';
+import Projects from '@/scenes/projects';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);     // ensures enum string type
@@ -17,6 +18,7 @@ function App() {
         isTopOfPage={isTopOfPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Projects setSelectedPage={setSelectedPage} />
     </div>
   )
 }

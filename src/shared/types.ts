@@ -9,3 +9,9 @@ export enum SelectedPage {
     Experts = 'experts',
     ContactUs = 'contactus'
   }
+
+  export interface ProjectType{
+    image: JSX.Element;
+    title: string;
+    description: string;
+  }
