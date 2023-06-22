@@ -11,7 +11,7 @@ export enum SelectedPage {
   }
 
   export interface ProjectType{
-    image: JSX.Element;
+    image: string;      // JSX.Element - Is this for components??? 
     title: string;
     description: string;
   }

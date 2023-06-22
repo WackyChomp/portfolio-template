@@ -30,6 +30,7 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 						{isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
 							<div className={`${flexBetween} gap-8 text-sm`}>
 								<Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+								<Link page='Projects' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 								<Link page='Benefits' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 								<Link page='Our Domains' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 								<Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
@@ -63,6 +64,7 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 					{/* Menu Items , modified above code snippet */}
 					<div className="ml-[33%] flex flex-col gap-10 text-2xl z-30">
 						<Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+						<Link page='Projects' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Benefits' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Our Domains' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
