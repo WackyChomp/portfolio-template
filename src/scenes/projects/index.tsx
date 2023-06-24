@@ -29,6 +29,7 @@ const Projects = ({ setSelectedPage }: Props) => {
             image = {project.image}
             title = {project.title}
             description = {project.description}
+            tags = {project.tags}
             setSelectedPage = {setSelectedPage}
           />
         ))}

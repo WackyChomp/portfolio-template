@@ -14,4 +14,5 @@ export enum SelectedPage {
     image: string;      // JSX.Element - Is this for components??? 
     title: string;
     description: string;
+    tags?: string[];
   }
