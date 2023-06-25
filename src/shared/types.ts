@@ -2,6 +2,7 @@ export enum SelectedPage {
     Home = 'home',
     Technologies = 'technologies',
     Projects = 'projects',
+    Skills = 'skills',
     Timeline = 'timeline',
     Benefits = 'benefits',
     OurDomains = 'ourdomains',
