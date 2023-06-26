@@ -16,4 +16,6 @@ export enum SelectedPage {
     title: string;
     description: string;
     tags?: string[];
+    code?: string;
+    source?: string;
   }

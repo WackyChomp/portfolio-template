@@ -8,6 +8,8 @@ type Props = {
   title: string;
   description: string;
   tags: string[];
+  code: string;
+  source: string;
   setSelectedPage: (value: SelectedPage) => void;
 }
 
@@ -20,7 +22,7 @@ const RoundProjectImage = 'rounded-full h-20 w-20';
 const RoundProjectImage1 = 'rounded-lg h-64';
 
 
-const Project = ({ image, title, description, tags, setSelectedPage }: Props) => {
+const Project = ({ image, title, description, tags, code, source, setSelectedPage }: Props) => {
   return (
 
     /* Project Card */
@@ -43,6 +45,12 @@ const Project = ({ image, title, description, tags, setSelectedPage }: Props) =>
 
       {/* Tags */}
       <p className="my-5 bg-slate-300">{tags}</p>
+
+      {/* Description */}
+      <div className="flex space-x-10 [&>*]:bg-secondary-500">
+        <a href={code}>Code</a>
+        <a href={source}>Source</a>
+      </div>
 
     </motion.div>
   )

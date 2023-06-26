@@ -30,6 +30,8 @@ const Projects = ({ setSelectedPage }: Props) => {
             title = {project.title}
             description = {project.description}
             tags = {project.tags}
+            code = {project.code}
+            source = {project.source}
             setSelectedPage = {setSelectedPage}
           />
         ))}
