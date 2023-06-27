@@ -28,6 +28,7 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 						<img src={Logo} alt="logo image here" />
 						{/* right */}
 						{isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
+							{/* Links */}
 							<div className={`${flexBetween} gap-8 text-sm`}>
 								<Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 								<Link page='Projects' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
@@ -36,6 +37,13 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 								<Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 								<Link page='Perks' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 								<Link page='Experts' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+							</div>
+
+							{/* Socials */}
+							<div className={`${flexBetween} gap-4`}>
+								<img src="https://img.icons8.com/ios-filled/500/linkedin.png" alt="Linkedin" width='20' />
+								<img src="https://img.icons8.com/material-rounded/384/github.png" alt="Github" width='20' />
+								<img src="https://img.icons8.com/ios-filled/500/youtube-play.png" alt="YouTube" width='20' />
 							</div>
 						</div>
 						)
@@ -62,7 +70,7 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 						</button>
 					</div>
 					{/* Menu Items , modified above code snippet */}
-					<div className="ml-[33%] flex flex-col gap-10 text-2xl z-30">
+					<div className="ml-[25%] flex flex-col gap-7 text-2xl z-30">
 						<Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Projects' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Benefits' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
@@ -70,6 +78,11 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 						<Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Perks' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 						<Link page='Experts' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+					</div>
+					<div className='ml-[25%] flex gap-10 py-10'>
+						<img src="https://img.icons8.com/ios-filled/500/linkedin.png" alt="Linkedin" width='20' />
+						<img src="https://img.icons8.com/material-rounded/384/github.png" alt="Github" width='20' />
+						<img src="https://img.icons8.com/ios-filled/500/youtube-play.png" alt="YouTube" width='20' />
 					</div>
 				</div>
 			)}
