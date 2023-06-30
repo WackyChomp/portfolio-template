@@ -19,7 +19,7 @@ const childVariant = {
 }
 
 const RoundProjectImage = 'rounded-full h-20 w-20';
-const RoundProjectImage1 = 'rounded-lg h-64';
+const RoundProjectImage1 = 'rounded-lg h-64 w-96';
 
 
 const Project = ({ image, title, description, tags, code, source, setSelectedPage }: Props) => {
@@ -27,7 +27,7 @@ const Project = ({ image, title, description, tags, code, source, setSelectedPag
 
     /* Project Card */
     <motion.div 
-      className='mt-5 rounded-md border-2 border-gray-100 bg-primary-300 px-5 py-7 text-center'
+      className='w-[420px] mt-2 rounded-md border-2 border-gray-100 bg-primary-300 px-5 py-7 text-center'
       variants={childVariant}
     >
       {/* Image */}

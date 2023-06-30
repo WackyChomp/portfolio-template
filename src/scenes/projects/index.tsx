@@ -22,7 +22,9 @@ const Projects = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {/* List of Projects */}
-      <div className="md:flex items-center justify-between gap-6 mt-5">
+      <div className="md:flex items-center justify-between mt-5">
+        <div className="flex flex-wrap gap-6">
+
         {projects.map((project: ProjectType) => (
           <Project
             key = {project.title}
@@ -35,6 +37,8 @@ const Projects = ({ setSelectedPage }: Props) => {
             setSelectedPage = {setSelectedPage}
           />
         ))}
+        
+        </div>
       </div>
 
     </section>

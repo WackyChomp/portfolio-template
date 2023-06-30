@@ -16,6 +16,7 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");		// hook
 	const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 	const navbarBackground = isTopOfPage ? "" : 'bg-primary-100 drop-shadow';
+	const SocialIconHover = 'transition duration-300 cursor-pointer hover:scale-150 border-2 border-red-800 rounded-md hover:border-red-500';
 
   return (
     <nav>
@@ -40,10 +41,10 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 							</div>
 
 							{/* Socials */}
-							<div className={`${flexBetween} gap-4`}>
-								<img src="https://img.icons8.com/ios-filled/500/linkedin.png" alt="Linkedin" width='20' />
-								<img src="https://img.icons8.com/material-rounded/384/github.png" alt="Github" width='20' />
-								<img src="https://img.icons8.com/ios-filled/500/youtube-play.png" alt="YouTube" width='20' />
+							<div className={`${flexBetween} gap-6`}>
+								<img src="https://img.icons8.com/ios-filled/500/linkedin.png" className={SocialIconHover} alt="Linkedin" width='25' />
+								<img src="https://img.icons8.com/material-rounded/384/github.png" className={SocialIconHover} alt="Github" width='25' />
+								<img src="https://img.icons8.com/ios-filled/500/youtube-play.png" className={SocialIconHover} alt="YouTube" width='25' />
 							</div>
 						</div>
 						)
@@ -80,9 +81,9 @@ const Navbar = ( { selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 						<Link page='Experts' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 					</div>
 					<div className='ml-[25%] flex gap-10 py-10'>
-						<img src="https://img.icons8.com/ios-filled/500/linkedin.png" alt="Linkedin" width='20' />
-						<img src="https://img.icons8.com/material-rounded/384/github.png" alt="Github" width='20' />
-						<img src="https://img.icons8.com/ios-filled/500/youtube-play.png" alt="YouTube" width='20' />
+						<img src="https://img.icons8.com/ios-filled/500/linkedin.png" className={SocialIconHover} alt="Linkedin" width='25' />
+						<img src="https://img.icons8.com/material-rounded/384/github.png" className={SocialIconHover} alt="Github" width='25' />
+						<img src="https://img.icons8.com/ios-filled/500/youtube-play.png" className={SocialIconHover} alt="YouTube" width='25' />
 					</div>
 				</div>
 			)}
